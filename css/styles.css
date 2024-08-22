@@ -23,10 +23,99 @@ main aside {
     height: 100%;
     background-color: var(--color-black);
     border-right: 2px solid var(--color-purple);
+    box-shadow: 3px 0 15px 0 black;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.1%;
+    align-items: center;
+    gap: 2%;
+
 }
 
 .section_1 {
     width: 100%;
     height: 100%;
-    background: linear-gradient( to right, #571b8c56, #252323);
+    background-color: var(--color-black);
+}
+
+.aside_logo {
+    width: 90%;
+    /* box-shadow: 0px 0px 5px 0px black; */
+    /* border: 2px solid var(--color-purple); */
+    border-radius: 30px;
+    height: 20%;
+    background-color: var(--color-black);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_logo::after {
+    position: absolute;
+    content: '';
+    width: 102%;
+    height: 102%;
+    border-radius: 30px;
+    background: linear-gradient(to left, var(--color-purple), var(--color-white)200%);
+    z-index: -2;
+}
+
+.aside_logo:hover {
+    box-shadow: 2px 0 10px var(--color-purple), -2px 0 10px var(--color-white);
+    
+}
+
+.nav_links {
+    width: 90%;
+    height: 50%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1%;
+    align-items: flex-start;
+}
+
+.nav_links li {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    list-style: none;
+}
+
+.nav_links a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background: var(--color-black);
+    height: 100%;
+    position: relative;
+}
+
+.nav_links a::after{
+    position: absolute;
+    content: '';
+    width: 102%;
+    height: 106%;
+    border-radius: 15px;
+    background: linear-gradient(to left, var(--color-purple), var(--color-white) 200%);
+    z-index: -1;
+}
+
+.nav_links a:hover {
+    box-shadow: 7px 0 10px var(--color-purple), -2px 0 10px var(--color-white);
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px white;
+    transition: .3s;
 }
