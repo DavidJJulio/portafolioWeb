@@ -1,5 +1,11 @@
 :root{
     --color-black: #2b2727;
     --color-purple: #571B8C;
+    --color-purple-2: #c300ff;
     --color-white: #F1DAC4;
+}
+
+@font-face {
+    font-family: "cream";
+    src: url(../storage/font/cream-DEMO.ttf);
 }
