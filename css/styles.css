@@ -48,8 +48,8 @@ main aside {
 }
 .section_2 {
     width: 100%;
-    height: 100vh;
-    background-color: var(--color-purple);
+    height: 200vh;
+    background-color: var(--color-black);
     display: flex;
     padding-left: 23%;
 }
@@ -231,5 +231,47 @@ main aside {
 .section_2_div{
     width: 90%;
     height: 100%;
-    background-color: #c300ff;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.section_2_div img {
+    padding: 1%;
+    background-color: var(--color-black);
+    border: 3px solid var(--color-purple);
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.project_container {
+    width: 45%;
+    height: 25%;
+    position: relative;
+    object-fit: contain;
+    background-image: url(../storage/img/default_large.png);
+    border-radius: 30px;
+    border: 3px solid var(--color-purple-2);
+    box-shadow: 0px 0px 15px 0px black;
+   
+}
+
+.project_container::after {
+    border: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #571b8c50;
+    position: absolute;
+    border-radius: 30px;
+    pointer-events: none;
+}
+
+.project_container:hover::after {
+    z-index: -1;
+
 }
