@@ -233,7 +233,7 @@ main aside {
     height: 100%;
     background-color: var(--color-black);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     flex-wrap: wrap;
     gap: 100px;
@@ -253,25 +253,98 @@ main aside {
     height: 25%;
     position: relative;
     object-fit: contain;
-    background-image: url(../storage/img/default_large.png);
+    background-image: opac;
     border-radius: 30px;
     border: 3px solid var(--color-purple-2);
     box-shadow: 0px 0px 15px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 1;
+    justify-content: space-evenly;
+    transition: 1s ease;
    
 }
-
-.project_container::after {
-    border: none;
-    content: "";
+.background {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #571b8c50;
-    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: opacity 1s;
     border-radius: 30px;
-    pointer-events: none;
+    background-image: url(../storage/img/default_large.png);
 }
 
-.project_container:hover::after {
-    z-index: -1;
+.repositorio {
+    width: 30%;
+    height: 100%;
+    border: 3px solid var(--color-purple);
+    background-color: var(--color-black);
+    border-radius: 30px;
+    color: white;
+}
 
+.deploy {
+    width: 30%;
+    height: 100%;
+    border: 3px solid var(--color-purple);
+    background-color: var(--color-black);
+    border-radius: 30px;
+    color: white;
+}
+
+.project_container:hover .background {
+    opacity: .1;
+    transition: 1s;
+}
+
+.project_container:hover .info {
+    transition: 1s;
+    opacity: 1;
+}
+
+.info {
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 1s ease;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+    border-radius: 30px;
+    color: white;
+    padding: 3%;
+    background-color: var(--color-black);
+}
+
+.info div {
+    width: 100%;
+    height: 30%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.repositorio:hover {
+    background-color: var(--color-purple);
+    border: 3px solid #c300ff;
+    box-shadow: 0px 0px 10px 0px #c300ff;
+    font-weight: bolder;
+    transition: .3s;
+    text-shadow: 0px 0px 15px;
+}
+.deploy:hover {
+    background-color: var(--color-purple);
+    border: 3px solid #c300ff;
+    box-shadow: 0px 0px 10px 0px #c300ff;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px;
+    transition: .3s;
 }
