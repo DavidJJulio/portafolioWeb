@@ -13,7 +13,7 @@ html {
 
 body {
     width: 100%;
-    height: 500vh;
+    height: auto;
 }
 
 main {
@@ -48,13 +48,15 @@ main aside {
 }
 .section_3 {
     width: 100%;
-    height: 200vh;
+    height: 120vh;
     background-color: var(--color-black);
     display: flex;
     padding-left: 23%;
 }
 
 .aside_logo {
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 90%;
     /* box-shadow: 0px 0px 5px 0px black; */
     /* border: 2px solid var(--color-purple); */
@@ -67,23 +69,11 @@ main aside {
     justify-content: center;
     align-items: center;
     transition: 0.3s ease;
+    color: #c300ff;
+    text-shadow: 0px 0px 5px #c300ff;
 }
 
-.aside_logo::after {
-    position: absolute;
-    content: '';
-    width: 102%;
-    height: 102%;
-    border-radius: 30px;
-    background: linear-gradient(to left, var(--color-purple), var(--color-white)200%);
-    z-index: -2;
-}
 
-.aside_logo:hover {
-    box-shadow: 7px 0 20px var(--color-purple), -2px 0 20px var(--color-white);
-    transition: .3s;
-    
-}
 
 .nav_links {
     width: 90%;
@@ -197,8 +187,8 @@ main aside {
 }
 
 .cv {
-    width: 15%;
-    height: 5%;
+    width: 100%;
+    height: 100%;
     margin-top: 5%;
     position: relative;
     display: flex;
@@ -287,6 +277,32 @@ main aside {
     background-color: var(--color-black);
 }
 
+.section_4_div {
+    width: 100%;
+    height: 100%;
+    padding-left: 23%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8%;
+    padding-top: 14%;
+}
+
+.section_4_div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 40%;
+    gap: 50px;
+}
+.section_4_div div h1 {
+    font-size: 44px;
+    color: #c300ff;
+}
+.section_4_div div p {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.699);
+}
+
 
 .section_3_div{
     width: 90%;
@@ -299,18 +315,15 @@ main aside {
     gap: 100px;
 }
 
-.section_3_div img {
-    padding: 1%;
-    background-color: var(--color-black);
-    border: 3px solid var(--color-purple);
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border-radius: 10px;
+.section_1_div a {
+    width: 15%;
+    height: 5%;
+    text-decoration: none;
 }
+
 .project_container {
-    width: 45%;
-    height: 25%;
+    width: 540px;
+    height: 500px;
     position: relative;
     object-fit: contain;
     background-image: opac;
@@ -336,11 +349,31 @@ main aside {
     z-index: -1;
     transition: opacity 1s;
     border-radius: 30px;
-    background-image: url(../storage/img/default_large.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cine {
+    background-image: url(../storage/img/cinema2.png);
+}
+
+.lawyer {
+    background-image: url(../storage/img/lawyer.png);
+}
+
+.food {
+    background-image: url(../storage/img/food.png);
+}
+
+.info div a {
+    width: 30%;
+    height: 100%;
+    text-decoration: none;
 }
 
 .repositorio {
-    width: 30%;
+    width: 100%;
     height: 100%;
     border: 3px solid var(--color-purple);
     background-color: var(--color-black);
