@@ -46,7 +46,7 @@ main aside {
     display: flex;
     padding-left: 23%;
 }
-.section_2 {
+.section_3 {
     width: 100%;
     height: 200vh;
     background-color: var(--color-black);
@@ -228,7 +228,67 @@ main aside {
     box-shadow: 0px 0px 10px 0px white;
 }
 
-.section_2_div{
+.section_2 {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--color-black);
+    padding-left: 23%;
+}
+
+.section_2_div {
+    padding-top: 6%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+}
+
+.section_2_div h3 {
+    color: white;
+    font-size: 36px;
+}
+
+.technologies_container{
+    display: flex;
+    gap: 20px;
+}
+.technologies_container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.technologies_container div h2{
+    color: white;
+    opacity: 0;
+    transition: .3s;
+}
+
+.technologies_container div:hover .skill{
+    opacity: 1;
+    transition: .3s;
+    text-shadow: 0px 0px 15px white;
+}
+
+.technologies_container img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.section_4 {
+    width: 100%;
+    height: 110vh;
+    background-color: var(--color-black);
+}
+
+
+.section_3_div{
     width: 90%;
     height: 100%;
     background-color: var(--color-black);
@@ -239,7 +299,7 @@ main aside {
     gap: 100px;
 }
 
-.section_2_div img {
+.section_3_div img {
     padding: 1%;
     background-color: var(--color-black);
     border: 3px solid var(--color-purple);
