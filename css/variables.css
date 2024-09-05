@@ -9,3 +9,15 @@
     font-family: "cream";
     src: url(../storage/font/cream-DEMO.ttf);
 }
+@font-face {
+    font-family: "1942";
+    src: url(../storage/font/1942.ttf);
+}
+@font-face {
+    font-family: "Lgante";
+    src: url(../storage/font/ELEGANT\ TYPEWRITER\ Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../storage/font/Roboto-Regular.ttf);
+}
